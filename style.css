@@ -1,0 +1,160 @@
+:root {
+  --primary: #2d2254;
+  --secondary: #f5c42f;
+  --text-color: #c5bbec;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  background: var(--secondary);
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+  will-change: transform;
+  transition: transform 0.15s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.primary__text {
+  color: var(--primary);
+}
+
+.secondary__text {
+  color: var(--secondary);
+}
+
+section {
+  position: relative;
+  padding: 0 20px;
+}
+
+.section__top {
+  min-height: 500px;
+  background-image: url('./images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section__top h1 {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
+.section__top .content {
+  position: absolute;
+  top: 100px;
+  right: 70px;
+  width: 50%;
+}
+
+.section__stream {
+  min-height: 700px;
+}
+
+.section__stream h2 {
+  font-size: 2.2rem;
+}
+
+.section__stream .play {
+  width: 25%;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
+.section__stream .content {
+  position: absolute;
+  width: 50%;
+  top: 130px;
+  right: 70px;
+}
+
+.section__stream .content > div,
+.section__grid > div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.section__grid i {
+  color: var(--secondary);
+}
+
+.section__grid p {
+  color: var(--text-color);
+}
+
+.section__grid .dot {
+  font-size: 2.8rem;
+  padding-left: 2px;
+}
+
+.footer {
+  border-top: 1px solid var(--text-color);
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
